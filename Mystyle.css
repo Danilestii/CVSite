@@ -44,16 +44,16 @@ background: rgba(235, 240, 233, 0.5);
   box-sizing: border-box;
 }
 
-.row {
-  margin-left:-5px;
-  margin-right:-5px;
-}
+/*.row {
+  margin-left:10px;
+  margin-right:10px;
+}*/
 
-.column {
+/*.column {
   float: right;
   width: 50%;
   padding: 5px;
-}
+}*/
 
 .row::after {
   content: "";
@@ -62,8 +62,49 @@ background: rgba(235, 240, 233, 0.5);
 }
 
 img {
-border: 2px solid powderblue;
 margin: 50px; padding: 10px;
+}
+
+img.iverson {
+  opacity: 1;
+  display: block;
+  border: 2px solid rgb(0, 7, 8);
+  margin: 50px; padding: 10px;
+  border-radius: 50%;
+  transform: skewX(-20deg);
+}
+
+img.iverson:hover 
+{
+  opacity: 0.3;
+}
+
+img.iverson:hover .container1
+{
+  opacity: 1;
+}
+
+img.oneal {
+  border: 2px dotted rgb(170, 214, 221);
+  margin: 50px; padding: 10px;
+  border-radius: 25%;
+  transform: skewX(20deg);
+} 
+
+div.row_basketball {
+  display: flex;
+  width: 100%;
+  background-color: rgb(218, 40, 40);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 100px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 30px;
+  background-color: rgb(218, 40, 40);
+  margin-bottom: 20px;
 }
 
 a {
